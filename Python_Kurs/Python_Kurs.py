@@ -1,22 +1,52 @@
-# lege eine neue Variable mit der Bezeichnung x and und schreibe die
-# Ganzzahl 5 hinein
-x = 9
-y = 7
+"""
 
-# prüfe einen komplexere Kette an Bedingungen und reagiere entsprechend
-if x == 7:
-    print("x ist 7")
-elif y == 7:
-    print("y ist 7")
-elif x > 5 and y == 7:
-    print("x ist größer als 5 und y ist 7")
-elif x == 5 and y > 1:
-    print("x ist größer als 1 und y ist größer als 1")
-elif x > 0 and y > 0:
-    print("x ist größer als 0 und y ist größer als 0")
+
+"""
+__name__: "Paul Bauer"
+
+
+
+
+# ElIf - Beispiel Fussballspiel
+
+ # der Ball hat eine x- und eine y-Koordinate
+ball_pos_x = 34
+ball_pos_y = -2
+
+# ein Fußballfeld ist etwa 100m x 70m groß und ein Tor ist etwa 7m breit
+# das Tor steht in der Mitte der Grundlinie, damit können die Positionen
+# der Pfosten berechnet werden
+pfos_1_x = 31.5
+pfos_2_x = 38.5
+
+# wenn der Ball im Tor ist
+if ball_pos_y < 0 and ball_pos_x > pfos_1_x and ball_pos_x < pfos_2_x:
+    # bereite einen neuen Anstoß vor
+    print("Tor! Anstoß!")
+# wenn der Ball sonstwo über die Grundlinie gerollt ist
+elif ball_pos_y < 0:
+    # dann gibt es auch einen Abstoß
+    print("Der Ball ist nicht im Tor! Abstoss!")
+# ansonsten
 else:
-    print("Keine der vorigen Bedingungen trifft zu!")
+    # der Ball ist im Spielfeld
+    print("Der Ball rollt. Er ist rund und das Spiel hat 90 Minuten!")
+
+print("Egal, was passiert: die Fans singen")
 
 # Probier's selbst aus:
-# Setzte verschiedene Zahlen für x und y ein und
-# schau dir an was passiert.
+# Spiele nun die weiteren 3 Möglichkeiten aus der Abbildung durch,
+# wo der Ball sich befinden könnte!
+
+
+# For-Schleifen
+# Aufgabe1:
+
+aufgabe_1_bereich = range(7,19)
+for i in aufgabe_1_bereich:
+    print(i)
+
+# Aufgabe2:
+aufgabe_2_bereich = range(8,19,5)
+for i in aufgabe_2_bereich:
+    print(i)
