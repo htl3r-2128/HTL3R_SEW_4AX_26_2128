@@ -97,3 +97,52 @@ print("Ergebnis der Quadratfunktion: " + str(ergebnisQuadratfunktion))
 
 ergebnisMinimum = Minimum(3, 3)
 print("Ergebnis der Minimumfunktion: " + str(ergebnisMinimum))
+
+
+# Listen
+
+# das Unternehmen hat bereits eine Abrechnungs-Funktion
+def abrechnen(auftrag):
+    print("Abrechnung erfolgt: " + auftrag)
+
+# initialisiere eine leere Liste für die Aufträge
+aufträge = []
+
+# über den Monat: befülle die Liste mit Aufträgen
+aufträge.append("auftrag_klaus_schmidt")
+aufträge.append("auftrag_hanna_gruber")
+aufträge.append("auftrag_michaela_karst")
+
+# Probier's selbst aus:
+# Du hast etwas bei dem Unternehmen beauftragt.
+# Hänge einen Auftrag mit deinem Namen an die Liste an.
+aufträge.append("auftrag_paul_bauer")
+#
+# am Monatsende: gehe alle Aufträge durch und rechne sie ab
+for auftrag in aufträge:
+    abrechnen(auftrag)
+
+
+#Liste Sortieren
+# die zu sortierende Liste
+
+unsortierteListe = [2, 5, 7, 9, 1, 3, 6, 4, 8, 0]
+
+# lege eine leere Liste an, in welche die Zahlen einsortiert
+# werden sollen
+sortierteListe = []
+
+# so lange die unsortierte Liste nicht leer ist
+while len(unsortierteListe) != 0:
+    # finde das kleinste Element
+    kleinsteZahl = min(unsortierteListe)
+
+    # lösche es aus der Liste der unsortierten Zahlen
+    unsortierteListe.remove(kleinsteZahl)
+
+    # füge das kleinste Element in die sortierte Liste hinten an
+    sortierteListe.append(kleinsteZahl)
+
+# gebe das Ergebnis aus, es sollten die Zahlen 0 bis 9 in aufsteigender
+# Reihenfolge angezeigt werden, dann ist dein Algorithmus korrekt
+print(sortierteListe)
