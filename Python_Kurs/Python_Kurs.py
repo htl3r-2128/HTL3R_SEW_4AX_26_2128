@@ -50,3 +50,50 @@ for i in aufgabe_1_bereich:
 aufgabe_2_bereich = range(8,19,5)
 for i in aufgabe_2_bereich:
     print(i)
+
+
+# Funktionen
+# Math - Funktionen
+
+# der Rückgabewert ist die Summe der beiden Argumente (x + y)
+def addiere(x, y):
+    return x + y
+
+# definiere nun genauso eine Subtraktionsfunktion (x - y)
+def subtrahiere(x, y):
+    return x - y
+
+# eine Multiplikationsfunktion (x * y)
+def multipliziere(x, y):
+  return x * y
+
+# eine Quadratfunktion (x * x)
+def quadriere(x, y):
+  return x ** y
+
+# und eine Minimum-Funktion
+# die Minimum-Funktion gibt das Argument zurück, das den kleineren
+# Wert hat
+def Minimum(x, y):
+  if x < y:
+    return x
+  else:
+    return y
+
+# teste alle Funktionen, indem du sie aufrufst und dir die Ergebnisse
+# ausgeben lässt
+
+ergebnisAddition = addiere(5, 7)
+print("Ergebnis der Addition: " + str(ergebnisAddition))
+
+ergebnisSubtraktion = subtrahiere(5, 7)
+print("Ergebnis der Subtraktion: " + str(ergebnisSubtraktion))
+
+ergebnisMultiplikation = multipliziere(3, 6)
+print("Ergebnis der Multiplikation: " + str(ergebnisMultiplikation))
+
+ergebnisQuadratfunktion = quadriere(2, 6)
+print("Ergebnis der Quadratfunktion: " + str(ergebnisQuadratfunktion))
+
+ergebnisMinimum = Minimum(3, 3)
+print("Ergebnis der Minimumfunktion: " + str(ergebnisMinimum))
