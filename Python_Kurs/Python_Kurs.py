@@ -52,7 +52,9 @@ for i in aufgabe_2_bereich:
     print(i)
 
 
-# Funktionen
+"""
+Funktionen
+"""
 # Math - Funktionen
 
 # der Rückgabewert ist die Summe der beiden Argumente (x + y)
@@ -147,8 +149,10 @@ while len(unsortierteListe) != 0:
 # Reihenfolge angezeigt werden, dann ist dein Algorithmus korrekt
 print(sortierteListe)
 
+"""
+Dictionaries
+"""
 
-#Dictionaries
 
 # lege ein Dictionary mit Daten einer Kundin an
 kunde1 = {
