@@ -27,6 +27,10 @@ def main() ->object:
     überprüft die palindrom_product Methode
     >>> palindrom_product(906610)
     906609
+
+    Überprüft die get_dec_hex_palindrom Methode
+    >>> get_dec_hex_palindrom(360)
+    Dec: 353, Hex: 161
     """
 
 
@@ -53,7 +57,18 @@ def to_base(number:int, base:int)->str:
     return erg
 
 
-
+def get_dec_hex_palindrom(x)->str:
+    """
+    Diese Methode geht alle Zahlen ab x nach unten
+    durch. Alle Zahlen die sowohl im Dezimalsystem, als
+    auch im Hexadezimalsystem ein Palindrom sind werden
+    gemeinsam in einem String ausgegeben.
+    :param x:
+    :return: str
+    """
+    for i in range (x, 0, -1):
+        if is_palindrom(str(i)) and is_palindrom(to_base(i, 16)):
+            return "Dec:" + str(i) + ", Hex:" + to_base(i, 16)
 
 def palindrom_product(x) ->int:
     """
