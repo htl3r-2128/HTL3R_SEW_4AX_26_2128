@@ -73,7 +73,6 @@ def longest_collatz_sequence(n:int) -> list[int]:
     :return:
     """
     longest_sequence = len(collatz_sequence(n))
-    ergListe = [n, longest_sequence]
     if n <= 0:
         return []
     else:
