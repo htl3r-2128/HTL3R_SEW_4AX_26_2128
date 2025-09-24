@@ -39,8 +39,8 @@ def main() -> object:
 
 def collatz(n) -> int:
     """
-    Diese Methode macht einen
-    den Collatz-Algorithmus definiert
+    Diese Methode definiert
+    den Collatz-Algorithmus
     :param n: int
     :return: int
     """
@@ -77,7 +77,7 @@ def longest_collatz_sequence(n:int) -> list[int]:
     if n <= 0:
         return []
     else:
-        for i in range(0, n + 1):
+        for i in range(0, n, 1):
             if len(collatz_sequence(i)) >= longest_sequence:
                 longest_sequence = len(collatz_sequence(i))
                 ergList = [i, longest_sequence]
